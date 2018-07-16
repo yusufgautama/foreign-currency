@@ -12,7 +12,7 @@ docker-compose build
 docker-compose up -d
 ```
 ```
-docker-compose app python manage.py recreate_db
+docker-compose exec app python manage.py recreate_db
 ```
 
 Sometimes postgres had a slow booting up, retry if needed.
