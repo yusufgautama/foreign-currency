@@ -1,6 +1,6 @@
 ### Schema
 
-![alt text](https://github.com/yusufgautama/foreign_currency/doc/foreign_db.PNG)
+![alt text](https://github.com/yusufgautama/foreign-currency/blob/master/doc/foreign_db.PNG)
 
 For this project, it doesn't need to create a complex table schema.
 

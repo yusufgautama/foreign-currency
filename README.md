@@ -19,7 +19,7 @@ Sometimes postgres had a slow booting up, retry if needed.
 
 ## Running
 
-Kindly follow the [API documentation](https://github.com/yusufgautama/foreign_currency/doc/API.md).
+Kindly follow the [API documentation](https://github.com/yusufgautama/foreign-currency/blob/master/doc/API.md).
 
 ## Testing
 
@@ -29,7 +29,7 @@ python -m unittest test
 
 ## Reference
 
-Quick explanation about database and design can be found [here](https://github.com/yusufgautama/foreign_currency/doc/DB.md).
+Quick explanation about database and design can be found [here](https://github.com/yusufgautama/foreign-currency/blob/master/doc/DB.md).
 
 ## Authors
 
