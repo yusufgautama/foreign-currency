@@ -1,0 +1,26 @@
+version: '2.1'
+services:
+  postgres:
+    restart: always
+    image: postgres:10
+    environment:
+      - POSTGRES_DB=foreign_currency
+      - POSTGRES_USER=dbuser
+      - POSTGRES_PASSWORD=dbpassword
+    ports:
+      - "5432:5432"
+  app:
+    restart: always
+    image: foreign_currency:latest
+    environment:
+      - DATABASE_URL=postgresql://dbuser:dbpassword@192.168.99.100/foreign_currency
+      - FLASK_APP=manage.py
+    build: .
+    links:
+      - postgres
+    depends_on:
+      - postgres
+    ports:
+      - 5000:5000
+    volumes:
+      - .:/home/foreign_currency

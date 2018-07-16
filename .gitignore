@@ -1,0 +1,4 @@
+.idea/
+**.db
+logs/
+__pycache__/
